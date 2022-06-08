@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,64 +8,134 @@
   <title>Frontend Mentor | Fylo landing page with two column layout</title>
   <link rel="stylesheet" href="styles/style.css">
 </head>
+
 <body>
-  header.hero>
-  <form action="" class="form">
-    <input type="email" id="email" name="user__email" placeholder="Enter your email" class="form__input">
-    <button type="submit" name="" id="btn" class="form__cta">Get Started</button>
-  </form>
-  Features
-  Team
-  Sign In
-
-  All your files in one secure location, accessible anywhere.
-
-  Fylo stores your most important files in one secure location. 
-  Access them wherever you need, share and collaborate with friends, 
-  family, and co-workers.
-
+  <header class="hero">
+    <nav class="hero__nav">
+      <figure class="nav__logo">
+        <img src="images/logo.svg" alt="fylo logo" class="nav__logo__img">
+      </figure>
+      <ul class="nav__menu">
+        <li class="menu__link"><a href="#" class="menu__link__option">Features</a></li>
+        <li class="menu__link"><a href="#" class="menu__link__option">Team</a></li>
+        <li class="menu__link"><a href="#" class="menu__link__option">Sign In</a></li>
+      </ul>
+    </nav>
+    <section class="hero__subscription flex">
+      <figure class="subscription__picture">
+        <img src="images/illustration-1.svg" alt="" class="subscription__picture__img">
+      </figure>
+      <div class="subscription__info">
+        <h1 class="info__title">All your files in one secure location, accessible anywhere.</h1>
+        <p class="info__paragraph">Fylo stores your most important files in one secure location.
+          Access them wherever you need, share and collaborate with friends,
+          family, and co-workers.</p>
+        <form action="" class="info__form">
+          <input type="email" name="email" placeholder="Enter your email" id="email" class="info__form__email">
+          <button type="submit" name="btn_submit" id="btn" class="info__form__btn">Get Started</button>
+        </form>
+      </div>
+    </section>
+  </header>
+  <main class="main">
+    <section class="main__description flex">
+      <figure class="description__picture">
+        <img src="images/illustration-2.svg" alt="" class="description__picture__img">
+      </figure>
+      <div class="description__info">
+        <h2 class="info__title">Stay productive, wherever you are</h2>
+        <p class="info__paragraph">Never let location be an issue when accessing your files. Fylo has you
+          covered for all of your file storage needs.</p>
+        <a href="" class="info__link">See how Fylo works <img src="images/icon-arrow.svg" alt=""
+            class="info__link__img"></a>
+        <div class="info__testimonial">
+          <figure class="testimonial__picture">
+            <img src="" alt="" class="testimonial__picture__img">
+          </figure>
+          <p class="testimonial__paragraph">Securely share files and folders with friends, family and colleagues for
+            live collaboration. No email attachments required!</p>
+          <p class="testimonial__paragraph">Fylo has improved our team productivity by an order of magnitude. Since
+            making the switch our team has become a well-oiled collaboration machine.</p>
+          <div class="testimonial__author">
+            <figure class="author__avatar">
+              <img src="" alt="" class="avatar__img">
+            </figure>
+            <div class="author__info">
+              <h3 class="author__info__name">Kyle Burton</h3>
+              <p class="author__info__paragraph">Founder & CEO, Huddle</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="main__access flex">
+      <div class="access__info">
+        <h2 class="info__title">Get early access today</h2>
+        <p class="info__paragraph">It only takes a minute to sign up and our free starter tier is extremely generous.
+          If you have any questions, our support team would be happy to help you.</p>
+      </div>
+      <form action="" class="access__form">
+        <input type="text" name="email" id="email-free" class="form__input" placeholder="email@example.com">
+        <button type="submit" name="btn-submit" id="btn-free" class="form__btn">Get Started For Free</button>
+      </form>
+    </section>
+  </main>
+  <footer class="footer">
+    <figure class="footer__logo">
+      <img src="images/footer-logo.svg" alt="" class="logo__img">
+    </figure>
+    <div class="footer__contact">
+      <div class="contact__phone">
+        <img src="images/icon-phone.svg" alt="" class="phone__icon">
+        <p class="phone__number">Phone: +1-543-123-4567</p>
+      </div>
+      <div class="contact__mail">
+        <img src="images/icon-email.svg" alt="" class="mail__icon">
+        <p class="mail__email">example@fylo.com</p>
+      </div>
+    </div>
+    <div class="footer__menu">
+      <ul class="menu__links">
+        <li class="links__link"><a href="" class="link__option">About Us</a></li>
+        <li class="links__link"><a href="" class="link__option">Jobs</a></li>
+        <li class="links__link"><a href="" class="link__option">Press</a></li>
+        <li class="links__link"><a href="" class="link__option">Blog</a></li>
+        <li class="links__link"><a href="" class="link__option">Contact Us</a></li>
+        <li class="links__link"><a href="" class="link__option">Terms</a></li>
+        <li class="links__link"><a href="" class="link__option">Privacy</a></li>
+      </ul>
+    </div>
+    <div class="footer__social">
+      <figure class="social__icon">
+        <img src="images/bxl-facebook.svg" alt="" class="ico">
+      </figure>
+      <figure class="social__icon">
+        <img src="images/bxl-twitter.svg" alt="" class="ico">
+      </figure>
+      <figure class="social__icon">
+        <img src="images/bxl-instagram.svg" alt="" class="ico">
+      </figure>
+    </div>
+    <div class="copy">
+      <p class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+        Coded by <a href="https://github.com/rodrigoandregg">Rodrigo Andre Gutierrez</a>.
+      </p>
+    </div>
+  </footer>
+  
   
 
-  Stay productive, wherever you are
+  
+  
+  
+  
 
-  Never let location be an issue when accessing your files. Fylo has you 
-  covered for all of your file storage needs.
+  
+  
+  
 
-  Securely share files and folders with friends, family and colleagues for 
-  live collaboration. No email attachments required!
 
-  See how Fylo works
-
-  Fylo has improved our team productivity by an order of magnitude. Since 
-  making the switch our team has become a well-oiled collaboration machine.
-
-  Kyle Burton
-  Founder & CEO, Huddle
-
-  Get early access today
-
-  It only takes a minute to sign up and our free starter tier is extremely generous. 
-  If you have any questions, our support team would be happy to help you.
-
-  Get Started For Free
-
-  Phone: +1-543-123-4567
-  example@fylo.com
-
-  About Us
-  Jobs
-  Press
-  Blog
-
-  Contact Us
-  Terms
-  Privacy
-
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="https://github.com/rodrigoandregg">Rodrigo Andre Gutierrez</a>.
-    </p>
-  </footer>
 </body>
+
 </html>
