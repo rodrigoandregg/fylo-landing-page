@@ -81,7 +81,8 @@ ul {
 }
 
 .hero__info__title {
-    font-size: 1.5rem;
+    font-family: var(--font1);
+    font-size: 1.4rem;
 }
 
 .info__paragraph {
@@ -96,7 +97,7 @@ ul {
 .info__form__email {
     height: 43px;
     border: 1px solid var(--heading);
-    border-radius: 3px;
+    border-radius: 5px;
     padding-left: 20px;
 }
 
@@ -110,7 +111,7 @@ ul {
     font-weight: 700;
     background-color: var(--cta);
     border: none;
-    border-radius: 3px;
+    border-radius: 5px;
     color: var(--headerbg);
 }
 
@@ -135,7 +136,6 @@ ul {
 
 .description__info .info__paragraph {
     text-align: start;
-    color: var(--paragraph);
     font-family: var(--font2);
 }
 
@@ -227,7 +227,7 @@ ul {
     padding-left: 10px;
     height: 35px;
     border: none;
-    border-radius: 3px;
+    border-radius: 5px;
     box-shadow: 0 1px 3px var(--shadow);
 }
 
@@ -244,13 +244,14 @@ ul {
     color: var(--headerbg);
     background-color: var(--cta);
     border: none;
-    border-radius: 3px;
+    border-radius: 5px;
     box-shadow: 0 1px 3px var(--shadow);
 }
 
 /*----footer----*/
 
 .footer {
+    display: grid;
     padding: 60px 40px 20px;
     font-family: var(--font2);
     background-color: var(--heading);
@@ -268,7 +269,8 @@ ul {
     gap: 20px;
 }
 
-.contact__phone, .contact__mail {
+.contact__phone,
+.contact__mail {
     display: flex;
     gap: 20px;
 }
@@ -320,4 +322,183 @@ ul {
 
 .attribution a {
     color: hsl(228, 45%, 44%);
+}
+
+@media (min-width:1024px) {
+
+    .hero {
+        padding: 100px;
+        padding-bottom: 300px;
+        background: url(../images/bg-curve-desktop.svg) no-repeat bottom;
+    }
+
+    .nav__logo {
+        width: 200px;
+    }
+
+    .nav__menu {
+        gap: 60px;
+    }
+
+    .menu__link {
+        font-size: 1.3rem;
+    }
+
+    .hero__subscription {
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+
+    .subscription__picture {
+        width: 110%;
+    }
+
+    .subscription__info {
+        text-align: start;
+    }
+
+    .hero__info__title {
+        font-size: 2.5rem;
+    }
+
+    .info__paragraph {
+        font-size: 1.3rem;
+    }
+
+    .info__form {
+        flex-direction: row;
+        justify-content: space-between;
+        width: 80%;
+    }
+
+    .info__form__email {
+        width: 100%;
+        height: 50px;
+    }
+
+    .info__form__btn {
+        width: 60%;
+        height: 50px;
+    }
+
+    .main__description {
+        padding: 100px;
+        flex-direction: row-reverse;
+        gap: 200px;
+    }
+
+    .description__info {
+        align-items: flex-start;
+    }
+
+    .info__title {
+        font-size: 2.5rem;
+    }
+
+    .description__info .info__paragraph {
+        font-size: 1.2rem;
+    }
+
+    .info__link {
+        align-self: flex-start;
+        font-size: 1rem;
+    }
+
+    .info__link__img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .info__testimonial {
+        width: 60%;
+        padding: 30px;
+        gap: 20px;
+    }
+
+    .testimonial__picture {
+        width: 20px;
+        height: 20px;
+    }
+
+    .testimonial__paragraph {
+        font-size: 1rem;
+    }
+
+    .author__avatar {
+        width: 40px;
+        height: 40px;
+    }
+
+    .author__info__name {
+        font-size: .8rem;
+    }
+
+    .author__info__paragraph {
+        font-size: .8rem;
+    }
+
+    .main__access {
+        padding: 100px;
+        flex-direction: row;
+        gap: 200px;
+    }
+
+    .access__info {
+        width: 58%;
+        text-align: start;
+    }
+
+    .info__title {
+        font-size: 2.3rem;
+    }
+
+    .access__form {
+        justify-content: center;
+        width: 50%;
+        gap: 20px;
+    }
+
+    .form__input {
+        height: 50px;
+    }
+
+    .form__btn {
+        height: 50px;
+        width: 50%;
+    }
+
+    .footer {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas: 
+        "logo logo logo"
+        "contact menus social"
+        "copy copy copy"
+        ;
+        justify-content: space-between;
+        padding: 100px;
+        padding-bottom: 20px;
+    }
+
+    .footer__logo {
+        grid-area: logo;
+    }
+
+    .footer__contact {
+        grid-area: contact;
+    }
+
+    .footer__menu {
+        grid-area: menus;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .footer__social {
+        grid-area: social;
+    }
+
+    .copy {
+        grid-area: copy;
+    }
+
 }
